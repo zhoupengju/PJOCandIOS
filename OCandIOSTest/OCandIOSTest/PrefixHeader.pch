@@ -1,0 +1,48 @@
+//
+//  PrefixHeader.pch
+//  OCandIOSTest
+//
+//  Created by 周鹏钜 on 16/12/14.
+//  Copyright © 2016年 周鹏钜. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <WebKit/WebKit.h>
+
+#define WIDTH [[UIScreen mainScreen] bounds].size.width
+#define HEIGHT [[UIScreen mainScreen] bounds].size.height
+
+// 颜色
+#define PJColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0f]
+#define PJColorRGBA(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
+
+#define kRGBColor(rgbValue) \
+[UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16)) / 255.0 \
+green:((float)((rgbValue & 0xFF00) >> 8)) / 255.0 \
+blue:((float)(rgbValue & 0xFF)) / 255.0 alpha:1.0]
+
+// 全局背景色
+#define kGlobalBg kRGBColor(0xf6f6f6)
+#define kGlobalText kRGBColor(0x9a9a9a)
+#define kGlobalTextBg kRGBColor(0xf5f5f5)
+#define kGlobalGreenBg kRGBColor(0x00a95f)
+#define kGlobalPlaceholderLine kRGBColor(0xeeeeee)
+
+// 随机色
+#define PJRandomColor PJColor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
+
+// 雷达扫描效果使用的宏定义
+#define RADAR_DEFAULT_SECTIONS_NUM 3
+#define RADAR_DEFAULT_RADIUS 100.f
+#define RADAR_ROTATE_SPEED 60.0f
+#define INDICATOR_START_COLOR [UIColor colorWithRed:20.0/255.0 green:120.0/255.0 blue:40.0/255.0 alpha:1]
+#define INDICATOR_END_COLOR [UIColor colorWithRed:200.0/255.0 green:200.0/255.0 blue:200.0/255.0 alpha:0]
+#define INDICATOR_ANGLE 240.0
+#define INDICATOR_CLOCKWISE YES
+#define DEGREES_TO_RADIANS(d) (d * M_PI / 180)
+
+#endif /* PrefixHeader_pch */
