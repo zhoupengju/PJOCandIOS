@@ -10,6 +10,8 @@
 		CB813A631E014987000BC5EE /* newsDetail.css in Resources */ = {isa = PBXBuildFile; fileRef = CB813A621E014987000BC5EE /* newsDetail.css */; };
 		CB813A651E014D6E000BC5EE /* newsDetail.js in Resources */ = {isa = PBXBuildFile; fileRef = CB813A641E014D6E000BC5EE /* newsDetail.js */; };
 		CBBA65C61E023ACB005179F0 /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = CBBA65C51E023ACB005179F0 /* ViewController1.m */; };
+		CBBC980C1E02701A005C42E2 /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = CBBC980B1E02701A005C42E2 /* ViewController2.m */; };
+		CBBC980E1E027032005C42E2 /* newsDetail.html in Resources */ = {isa = PBXBuildFile; fileRef = CBBC980D1E027032005C42E2 /* newsDetail.html */; };
 		CBDDE1731E00E08E0087F029 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CBDDE1721E00E08E0087F029 /* main.m */; };
 		CBDDE1761E00E08E0087F029 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CBDDE1751E00E08E0087F029 /* AppDelegate.m */; };
 		CBDDE17E1E00E08E0087F029 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBDDE17D1E00E08E0087F029 /* Assets.xcassets */; };
@@ -42,6 +44,9 @@
 		CB813A641E014D6E000BC5EE /* newsDetail.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = newsDetail.js; sourceTree = "<group>"; };
 		CBBA65C41E023ACB005179F0 /* ViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController1.h; sourceTree = "<group>"; };
 		CBBA65C51E023ACB005179F0 /* ViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController1.m; sourceTree = "<group>"; };
+		CBBC980A1E02701A005C42E2 /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
+		CBBC980B1E02701A005C42E2 /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
+		CBBC980D1E027032005C42E2 /* newsDetail.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = newsDetail.html; sourceTree = "<group>"; };
 		CBDDE16E1E00E08E0087F029 /* OCandIOSTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCandIOSTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBDDE1721E00E08E0087F029 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CBDDE1741E00E08E0087F029 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -158,6 +163,8 @@
 				CBDDE1A71E0112920087F029 /* ViewController.m */,
 				CBBA65C41E023ACB005179F0 /* ViewController1.h */,
 				CBBA65C51E023ACB005179F0 /* ViewController1.m */,
+				CBBC980A1E02701A005C42E2 /* ViewController2.h */,
+				CBBC980B1E02701A005C42E2 /* ViewController2.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -181,6 +188,7 @@
 		CBDDE1AA1E0112920087F029 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CBBC980D1E027032005C42E2 /* newsDetail.html */,
 				CB813A621E014987000BC5EE /* newsDetail.css */,
 				CB813A641E014D6E000BC5EE /* newsDetail.js */,
 			);
@@ -292,6 +300,7 @@
 			files = (
 				CB813A651E014D6E000BC5EE /* newsDetail.js in Resources */,
 				CB813A631E014987000BC5EE /* newsDetail.css in Resources */,
+				CBBC980E1E027032005C42E2 /* newsDetail.html in Resources */,
 				CBDDE1811E00E08E0087F029 /* LaunchScreen.storyboard in Resources */,
 				CBDDE17E1E00E08E0087F029 /* Assets.xcassets in Resources */,
 			);
@@ -323,6 +332,7 @@
 				CBDDE1AB1E0112920087F029 /* ViewController.m in Sources */,
 				CBDDE1761E00E08E0087F029 /* AppDelegate.m in Sources */,
 				CBDDE1731E00E08E0087F029 /* main.m in Sources */,
+				CBBC980C1E02701A005C42E2 /* ViewController2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

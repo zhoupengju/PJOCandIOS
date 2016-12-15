@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
 #import "ViewController1.h"
+#import "ViewController2.h"
 
 @interface AppDelegate ()
 
@@ -24,7 +25,7 @@
     self.window.backgroundColor = [UIColor whiteColor];
     
     // 交互
-    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[ViewController alloc] init]];
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[ViewController2 alloc] init]];
     
     // 计算高度
 //    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[ViewController1 alloc] init]];

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    </head>
+    
+    <body>
+        <div style="margin-top: 20px">
+        <h2>OC与JS交互</h2>
+            <input type="button" value="唤起oc中的方法" onclick="zhoupengju.callcallBack()">
+        </div>
+        
+        <div style="margin-top: 20px">
+            <input type="button" value="唤起oc中的方法并给传值" onclick="callClick()">
+        </div>
+        
+        <script>
+            
+            var Callback = function(str) {
+                
+                alert(str);
+            }
+        
+        var callClick = function() {
+        
+            var callInfo = JSON.stringify({"csdn" : "http://blog.csdn.net/zhoupengju/article/details/53668169"});
+            zhoupengju.passValueCall(callInfo)
+        }
+        
+        var alerCallback = function(value)
+        {
+            alert(value);
+        }
+        
+        </script>
+    </body>
+</html>
