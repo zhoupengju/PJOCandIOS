@@ -23,7 +23,11 @@
     
     self.window.backgroundColor = [UIColor whiteColor];
     
-    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[ViewController1 alloc] init]];
+    // 交互
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[ViewController alloc] init]];
+    
+    // 计算高度
+//    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[ViewController1 alloc] init]];
     
     [self.window makeKeyAndVisible];
     

@@ -53,7 +53,8 @@
         for (NSDictionary *imgDict in arrayImg) {
         
             NSString *ref = imgDict[@"ref"];
-            NSString *imgHtml = [NSString stringWithFormat:@"<div class=\"all-img\"><img src=\"%@\"><div>%@</div></div>", imgDict[@"src"], imgDict[@"alt"]];
+//            NSString *imgHtml = [NSString stringWithFormat:@"<div class=\"all-img\"><img src=\"%@\"><div>%@</div></div>", imgDict[@"src"], imgDict[@"alt"]];
+            NSString *imgHtml = [NSString stringWithFormat:@"<div class=\"all-img\"><img src=\"%@\"><div>%@</div></div>", @"http://cdnq.duitang.com/uploads/item/201504/30/20150430194055_3reS2.jpeg", imgDict[@"alt"]];
 
             bodyHtml = [bodyHtml stringByReplacingOccurrencesOfString:ref withString:imgHtml];
         }
@@ -92,23 +93,6 @@
     }
 
     return YES; // 控制是否要做网络请求, 可以拦截请求
-}
-
--(void)webViewDidFinishLoad:(UIWebView *)webView {
-
-//    NSString *clientheight_str = [webView stringByEvaluatingJavaScriptFromString: @"document.body.offsetHeight"];
-//    float clientheight = [clientheight_str floatValue];
-//    //设置到WebView上
-//    webView.frame = CGRectMake(0, 0, self.view.frame.size.width, clientheight);
-//    //获取WebView最佳尺寸（点）
-//    CGSize frame = [webView sizeThatFits:webView.frame.size];
-//    //获取内容实际高度（像素）
-//    NSString * height_str= [webView stringByEvaluatingJavaScriptFromString: @"document.getElementById('webview_content_wrapper').offsetHeight + parseInt(window.getComputedStyle(document.getElementsByTagName('body')[0]).getPropertyValue('margin-top'))  + parseInt(window.getComputedStyle(document.getElementsByTagName('body')[0]).getPropertyValue('margin-bottom'))"];
-//    float height = [height_str floatValue];
-//    //内容实际高度（像素）* 点和像素的比
-//    height = height * frame.height / clientheight;
-//    
-//    NSLog(@"%f", height);
 }
 
 #pragma mark - 访问相册
